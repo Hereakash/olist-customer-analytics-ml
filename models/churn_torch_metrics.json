@@ -1,0 +1,60 @@
+{
+  "train_snapshot_date": "2018-06-01",
+  "rows": 73240,
+  "positives": 118,
+  "positive_rate": 0.0016111414527580556,
+  "device": "cuda",
+  "pos_weight": 617.9295654296875,
+  "best_val_pr_auc": 0.012302912482962784,
+  "test_roc_auc": 0.8840420334660632,
+  "test_pr_auc": 0.014931792283665618,
+  "best_threshold_f1": 0.9920933842658997,
+  "confusion_matrix": [
+    [
+      18201,
+      80
+    ],
+    [
+      25,
+      4
+    ]
+  ],
+  "classification_report": {
+    "0.0": {
+      "precision": 0.9986283331504444,
+      "recall": 0.9956238717794431,
+      "f1-score": 0.9971238392637028,
+      "support": 18281.0
+    },
+    "1.0": {
+      "precision": 0.047619047619047616,
+      "recall": 0.13793103448275862,
+      "f1-score": 0.07079646017699115,
+      "support": 29.0
+    },
+    "accuracy": 0.9942654287274714,
+    "macro avg": {
+      "precision": 0.523123690384746,
+      "recall": 0.5667774531311008,
+      "f1-score": 0.533960149720347,
+      "support": 18310.0
+    },
+    "weighted avg": {
+      "precision": 0.9971220923377514,
+      "recall": 0.9942654287274714,
+      "f1-score": 0.9956566904928936,
+      "support": 18310.0
+    }
+  },
+  "artifacts": {
+    "bundle": "models\\churn_torch_bundle.joblib",
+    "weights": "models\\churn_torch_nn.pt",
+    "history_csv": "models\\churn_torch_history.csv",
+    "reports": [
+      "reports/torch_nn_loss.png",
+      "reports/torch_nn_val_pr_auc.png",
+      "reports/torch_nn_pr_curve.png",
+      "reports/torch_nn_confusion_matrix.png"
+    ]
+  }
+}
